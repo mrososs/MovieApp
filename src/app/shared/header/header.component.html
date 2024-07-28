@@ -1,0 +1,45 @@
+<div class="containerr">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="home">
+        <img src="../../../assets/580b57fcd9996e24bc43c529.png" alt="logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a
+              routerLink="home"
+              class="nav-link"
+              routerLinkActive="active"
+              aria-current="page"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              *ngIf="!signInCheck"
+              routerLink="login"
+              routerLinkActive="active"
+              class="nav-link"
+              >Sign In</a
+            >
+            <a *ngIf="signInCheck" (click)="signOut()" class="nav-link"
+              >Sign Out</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>

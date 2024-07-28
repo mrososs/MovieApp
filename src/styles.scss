@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "bootstrap/scss/bootstrap";
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+
+  background-image: url("./assets/wallpaperflare.com_wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
